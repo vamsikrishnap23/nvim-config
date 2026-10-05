@@ -3,12 +3,7 @@ return {
   lazy = false,
   build = ':TSUpdate',
   config = function()
-
-    require("neo-tree").setup({
-      use_popups_for_input = false,
-    })
-
-    -- treesitter 
+   -- treesitter 
     require("nvim-treesitter").setup()
 
     require("nvim-treesitter").install({

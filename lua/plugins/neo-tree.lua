@@ -8,6 +8,10 @@ return {
   },
   lazy = false,
   config = function()
+    require("neo-tree").setup({
+      popup_border_style = "rounded",
+
+    })
     -- neo-tree keymap
     vim.keymap.set('n', '<C-n>', ':Neotree filesystem toggle left<CR>', {})
     -- Easier window navigation
